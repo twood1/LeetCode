@@ -51,13 +51,12 @@ class Solution:
                 for k in range(0, len(pointsHash.keys())):
                     currPoint = list(pointsHash.keys())[k]
                     if currPoint == point1 or currPoint == point2:
-                        continue
+                                        continue
                     dx1 = point1[0] - currPoint[0]
                     dy1 = point1[1] - currPoint[1]
 
                     if dx1 < 0 and dy1 < 0:
-                        dx1,dy1 = dx1*-1, dy1*-1
-
+                        dx1, dy1 = dx1 * -1, dy1 * -1
 
                     gcd = math.gcd(dx1, dy1)
                     dx1 = dx1 / gcd
