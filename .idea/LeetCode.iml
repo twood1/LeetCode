@@ -5,9 +5,12 @@
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hard/WordLadder2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Easy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hard/MaxPointsOnALine" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Medium" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hard" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/Hard/ClosestPalindrome" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hard/ShortestSubArraySumK" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hard/JumpGame2" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
