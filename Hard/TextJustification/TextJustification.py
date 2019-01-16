@@ -59,7 +59,3 @@ class Solution:
                 while len(retval) < maxWidth:
                     retval = retval + " "
         return retval
-
-Sol = Solution()
-print(Sol.fullJustify(["ask","not","what","your","country","can","do","for","you","ask","what","you","can","do","for","your","country"], 16))
-
