@@ -4,6 +4,7 @@
 # Do BFS. At the end, trace back the paths that led to the final node. Hash each level's next node.
 # Graph construction must be linear. Deprecated O(N^2) graph construction algorithm left in comments.
 
+
 class Solution:
     def __init__(self):
         self.graph = {}
