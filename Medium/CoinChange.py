@@ -1,24 +1,24 @@
-# Dynamic programming bottom up solution. Recurrence: opt[Val] = min(opt[Val-C]+1) for all C in coins.
-
 class Solution:
     def coinChange(self, coins, amount):
         if amount == 0:
             return 0
-        opt = [0]*(amount+1)
+        coins = set(coins)
+        if amount in coins:
+            return 1
+        opt = [0] + [float('inf')]*(amount)
         currVal = 1
         while currVal <= amount:
             if currVal in coins:
                 opt[currVal] = 1
-            minCount = float('Inf')
-            for coin in coins:
-                if currVal - coin < 0:
-                    continue
-                numcoins = opt[currVal-coin]+1
-                if numcoins < minCount:
-                    minCount = numcoins
-            opt[currVal] = minCount
-            currVal = currVal+1
-        retval = opt[amount]
-        if opt[amount] == float('inf'):
-            retval = -1
-        return retval
+            else:
+                currentMin = float('inf')
+                for coin in coins:
+                    if coin < currVal:
+                        if opt[currVal - coin] + 1 < currentMin:
+                            currentMin = opt[currVal - coin] + 1
+                opt[currVal] = currentMin
+            currVal += 1
+        return -1 if opt[amount] == float('inf') else opt[amount]
+
+sol = Solution()
+print(sol.coinChange([2, 5, 7], 638))
